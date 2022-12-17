@@ -1,0 +1,16 @@
+:root{
+    --default-bg: lightgray;
+    --default-color: cyan;
+    --default-font: helvetica,sans-serif;
+}
+.default-font{
+    font-size: var(--default-font);
+}
+
+.default-bg{
+    background-color: var(--default-bg);
+}
+
+.default-color{
+    color: var(--default-color);
+}

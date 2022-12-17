@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variables</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="default-font default-bg default-color">
+    
+    <h3>Learning css variabels</h3>
+    <header class="font-arial">
+        <h2>light and night mode with css variabels</h2>
+        <button onclick="setTheme('dark')">dark mode</button>
+        <button onclick="setTheme('light')">light mode</button>
+    </header>
+
+    <script>
+        function setTheme(themeType){
+            let root = document.documentElement;
+            if(themeType=='light'){
+                root.style.setProperty('--default-bg','lightgray')
+                root.style.setProperty('--default-color','cyan')
+            }else{
+                root.style.setProperty('--default-bg','black')
+                root.style.setProperty('--default-color','white')
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>
